@@ -5,15 +5,23 @@ import OnBoardingAuthBody from './OnBoardingAuthBody';
 import OnBoardingAuth from './OnBoardingAuthHeader';
 
 export default function Setup() {
-    const [completedSteps, setCompletedSteps] = useState(0);
+    const [currentStep, setCurrentStep] = useState(1);
+    const [progress, setProgress] = useState(0);
+
     return (
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center gap-12 w-full max-w-7xl mx-auto pb-12">
             <Header />
             <OnBoardingAuth
-                completedSteps={completedSteps}
-                setCompletedSteps={setCompletedSteps}
+                currentStep={currentStep}
+                setCurrentStep={setCurrentStep}
+                progress={progress}
             />
-            <OnBoardingAuthBody completedSteps={completedSteps} />
+            <OnBoardingAuthBody
+                currentStep={currentStep}
+                setCurrentStep={setCurrentStep}
+                progress={progress}
+                setProgress={setProgress}
+            />
             <CurlExample />
         </div>
     );

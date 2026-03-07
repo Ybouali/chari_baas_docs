@@ -55,20 +55,18 @@ function QuickActions() {
     } as const;
 
     return (
-        <div className="flex flex-col items-start p-6 w-full">
-            {/* Title - Left aligned */}
+        <div className="flex flex-col items-start w-full">
             <motion.h1
                 initial={{ opacity: 0, y: -24 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, ease: 'easeOut' }}
-                className="text-3xl md:text-4xl font-bold text-chari-blue-900 mb-10 tracking-tight"
+                className="text-3xl font-bold text-chari-blue-900 mb-8 tracking-tight"
             >
                 Quick Actions
             </motion.h1>
 
-            {/* Horizontal row of buttons - Full width */}
             <motion.div
-                className="flex flex-row w-full gap-4"
+                className="grid grid-cols-1 md:grid-cols-4 w-full gap-4"
                 variants={container}
                 initial="hidden"
                 animate="show"

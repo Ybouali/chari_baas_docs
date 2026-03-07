@@ -1,4 +1,3 @@
-// components/Card.tsx
 import { motion, type Variants } from 'framer-motion';
 import type { ReactNode } from 'react';
 
