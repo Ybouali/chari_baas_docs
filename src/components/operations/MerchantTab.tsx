@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { CreditCard, Loader2, CheckCircle } from 'lucide-react';
+import { CreditCard, Loader2 } from 'lucide-react';
 import { validatePhone } from '../../utils/kycValidation';
 
 interface MerchantTabProps {

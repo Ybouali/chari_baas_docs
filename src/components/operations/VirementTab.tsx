@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Building, Loader2, CheckCircle } from 'lucide-react';
+import { Building, Loader2 } from 'lucide-react';
 
 interface VirementTabProps {
     onSubmit: (data: any) => void;

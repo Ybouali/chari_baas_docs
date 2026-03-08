@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Send, Loader2, CheckCircle } from 'lucide-react';
+import { Send, Loader2 } from 'lucide-react';
 import { validatePhone } from '../../utils/kycValidation';
 
 interface TransferTabProps {
