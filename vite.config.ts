@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-    base: '/chari-baas-docs/', // IMPORTANT: Change to your actual GitHub repo name for Pages deployment
+    // IMPORTANT for GitHub Pages: base must be '/repo-name/' (case-sensitive)
+    base: '/chari_baas_docs/', 
     plugins: [react(), tailwindcss()],
 });
