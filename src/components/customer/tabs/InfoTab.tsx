@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Info, Loader2 } from 'lucide-react';
 import { TabContentWrapper } from '../TabContentWrapper';
-import { ApiResultDisplay } from '../ApiResultDisplay';
+import { ApiResultDisplay } from '../../common/ApiResultDisplay';
 
 const BASE_URL = 'https://api-sandbox.charimoney.com';
 

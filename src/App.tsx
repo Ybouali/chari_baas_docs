@@ -4,7 +4,7 @@ import LeftSidebar from './components/LeftSidebar';
 import Home from './pages/Home';
 import Setup from './pages/Setup';
 import Customer from './pages/Customer';
-import KYC from './pages/KYC';
+import KYC from './pages/Kyc';
 import Operations from './pages/Operations';
 import Beneficiaries from './pages/Beneficiaries';
 import Cards from './pages/Cards';

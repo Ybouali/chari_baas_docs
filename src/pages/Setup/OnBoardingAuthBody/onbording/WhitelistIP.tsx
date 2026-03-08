@@ -8,7 +8,7 @@ export default function WhitelistIP({ onNext }: { onNext?: () => void }) {
     const handleDetectIP = () => {
         setIsDetecting(true);
         setTimeout(() => {
-            setIpAddress('82.145.32.11'); // Simulated detection
+            setIpAddress('82.145.32.11');
             setIsDetecting(false);
         }, 1200);
     };
