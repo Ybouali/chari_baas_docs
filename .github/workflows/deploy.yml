@@ -38,7 +38,10 @@ jobs:
         run: npm run build
 
       - name: Setup Pages
+        # After first run, go to repo Settings → Pages → Source → select "GitHub Actions" if not already done
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
